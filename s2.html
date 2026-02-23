@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S2 版权沟通 - 高校国际出版流程模拟实训平台</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page" data-step="s2">
+  <header class="topbar">
+    <div class="brand">
+      <small>Step 02</small>
+      <strong>版权沟通</strong>
+    </div>
+    <nav>
+      <a class="nav-link" href="index.html">概览</a>
+      <a class="nav-link" href="s1.html">上一步 ← S1 选题立项</a>
+      <a class="nav-link" href="s3.html">下一步 → S3 样章翻译</a>
+    </nav>
+  </header>
+
+  <main class="layout fade-in">
+    <aside class="panel">
+      <h2>任务目标</h2>
+      <p>权利链调查→译权沟通→素材许可策略。</p>
+      <ul>
+        <li>T2.1 权利链调查与译权可用性判断</li>
+        <li>T2.2 译权询函沟通与第三方素材许可策略（模拟）</li>
+        <li>形成可审计证据链与行动清单</li>
+      </ul>
+      <p style="margin-top: 12px; font-size: 0.9rem;">资源参考：R011, R015, R035, R013, R014</p>
+    </aside>
+
+    <section class="workspace">
+      <div class="panel" data-section="t2.1">
+        <h2>T2.1 权利链调查+译权可用性判断</h2>
+        <p>识别权利主体与译权状态，形成可审计的证据链，输出结论与下一步。</p>
+        <ul>
+          <li>建立权利链：作者/原出版社/代理/机构持权情况</li>
+          <li>检索英文版或已授权线索，整理证据（链接/截图/检索路径）</li>
+          <li>输出译权可用性结论：可授权/不明需追踪/已授权不可行</li>
+        </ul>
+        <div class="field">
+          <label>翻译权可用性结论（请选择）</label>
+          <select data-field="rights_availability_result">
+            <option value="">请选择结论</option>
+            <option value="可授权">可授权</option>
+            <option value="已授权不可行">已授权不可行</option>
+            <option value="不明确需追踪">不明确需追踪</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>权利链表格</label>
+          <div style="overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse; min-width: 560px;">
+              <thead>
+                <tr style="background: #fff8f0;">
+                  <th style="text-align: left; padding: 10px; border: 1px solid var(--line);">作者</th>
+                  <th style="text-align: left; padding: 10px; border: 1px solid var(--line);">原出版社</th>
+                  <th style="text-align: left; padding: 10px; border: 1px solid var(--line);">代理或机构</th>
+                  <th style="text-align: left; padding: 10px; border: 1px solid var(--line);">持权情况</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding: 10px; border: 1px solid var(--line);">
+                    <input type="text" data-field="rights_chain_author_1" placeholder="作者名称" />
+                  </td>
+                  <td style="padding: 10px; border: 1px solid var(--line);">
+                    <input type="text" data-field="rights_chain_publisher_1" placeholder="原出版社" />
+                  </td>
+                  <td style="padding: 10px; border: 1px solid var(--line);">
+                    <input type="text" data-field="rights_chain_agent_1" placeholder="代理/机构" />
+                  </td>
+                  <td style="padding: 10px; border: 1px solid var(--line);">
+                    <input type="text" data-field="rights_chain_status_1" placeholder="持权情况" />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 10px; border: 1px solid var(--line);">
+                    <input type="text" data-field="rights_chain_author_2" placeholder="作者名称" />
+                  </td>
+                  <td style="padding: 10px; border: 1px solid var(--line);">
+                    <input type="text" data-field="rights_chain_publisher_2" placeholder="原出版社" />
+                  </td>
+                  <td style="padding: 10px; border: 1px solid var(--line);">
+                    <input type="text" data-field="rights_chain_agent_2" placeholder="代理/机构" />
+                  </td>
+                  <td style="padding: 10px; border: 1px solid var(--line);">
+                    <input type="text" data-field="rights_chain_status_2" placeholder="持权情况" />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 10px; border: 1px solid var(--line);">
+                    <input type="text" data-field="rights_chain_author_3" placeholder="作者名称" />
+                  </td>
+                  <td style="padding: 10px; border: 1px solid var(--line);">
+                    <input type="text" data-field="rights_chain_publisher_3" placeholder="原出版社" />
+                  </td>
+                  <td style="padding: 10px; border: 1px solid var(--line);">
+                    <input type="text" data-field="rights_chain_agent_3" placeholder="代理/机构" />
+                  </td>
+                  <td style="padding: 10px; border: 1px solid var(--line);">
+                    <input type="text" data-field="rights_chain_status_3" placeholder="持权情况" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="field">
+          <label>权利链调查报告（1–2 页）</label>
+          <textarea id="t21-rights-report" data-deliverable data-field="rights_chain_report" placeholder="记录权利主体、证据链与可审计说明..."></textarea>
+        </div>
+        <div class="field">
+          <label>上传证据材料（可多选）</label>
+          <input type="file" data-file multiple />
+          <small data-file-meta>未选择文件</small>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button" data-save>保存草稿</button>
+          <button class="button ghost" data-download-evidence>打包下载证据</button>
+          <button class="button secondary" data-export>导出材料包</button>
+        </div>
+      </div>
+
+      <div class="panel" data-section="t2.2">
+        <h2>T2.2 译权询函沟通+第三方素材许可策略（模拟）</h2>
+        <p>完成译权询函、沟通记录与第三方素材许可/替代方案，降低版权风险。</p>
+        <ul>
+          <li>按模板撰写并发送译权询函（平台模拟发送），记录往来要点与行动项</li>
+          <li>清点第三方素材（图/表/长引文等），分级并制定处理策略</li>
+          <li>产出许可申请信样稿与证据归档更新</li>
+        </ul>
+        <div class="field">
+          <label>译权询函（英文）</label>
+          <textarea data-field="rights_inquiry_email" placeholder="询函需包含书目信息、授权范围、地域与期限等关键要素。"></textarea>
+        </div>
+        <div class="field">
+          <label>沟通日志（要点与行动项）</label>
+          <textarea data-field="communication_log" placeholder="记录时间、联系人、关键条款、待办与下一步。"></textarea>
+        </div>
+        <div class="field">
+          <label>第三方素材清单（含策略与分级）</label>
+          <textarea data-field="third_party_assets" placeholder="列出素材类型、来源、处理策略（申请/替换/重绘/删减）与分级。"></textarea>
+        </div>
+        <div class="field">
+          <label>许可申请信样稿</label>
+          <textarea data-field="license_request_letter" placeholder="用于第三方素材授权申请的邮件或信函样稿。"></textarea>
+        </div>
+        <div class="field">
+          <label>翻译授权合同关键条款确认</label>
+          <div style="overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse; min-width: 560px;">
+              <thead>
+                <tr style="background: #fff8f0;">
+                  <th style="text-align: left; padding: 10px; border: 1px solid var(--line);">条款项</th>
+                  <th style="text-align: left; padding: 10px; border: 1px solid var(--line);">当前状态</th>
+                  <th style="text-align: left; padding: 10px; border: 1px solid var(--line);">备注</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding: 10px; border: 1px solid var(--line);">语种与版本范围</td>
+                  <td style="padding: 10px; border: 1px solid var(--line);"><input type="text" data-field="contract_language_scope" placeholder="如：英文纸书+电子书" /></td>
+                  <td style="padding: 10px; border: 1px solid var(--line);"><input type="text" data-field="contract_language_note" placeholder="是否独家/是否含衍生版本" /></td>
+                </tr>
+                <tr>
+                  <td style="padding: 10px; border: 1px solid var(--line);">授权地域</td>
+                  <td style="padding: 10px; border: 1px solid var(--line);"><input type="text" data-field="contract_territory_scope" placeholder="如：全球英语市场" /></td>
+                  <td style="padding: 10px; border: 1px solid var(--line);"><input type="text" data-field="contract_territory_note" placeholder="排除地区/渠道限制" /></td>
+                </tr>
+                <tr>
+                  <td style="padding: 10px; border: 1px solid var(--line);">授权期限</td>
+                  <td style="padding: 10px; border: 1px solid var(--line);"><input type="text" data-field="contract_term_scope" placeholder="如：5年/7年" /></td>
+                  <td style="padding: 10px; border: 1px solid var(--line);"><input type="text" data-field="contract_term_note" placeholder="续约与终止条件" /></td>
+                </tr>
+                <tr>
+                  <td style="padding: 10px; border: 1px solid var(--line);">费用与结算</td>
+                  <td style="padding: 10px; border: 1px solid var(--line);"><input type="text" data-field="contract_fee_scope" placeholder="预付金/版税比例" /></td>
+                  <td style="padding: 10px; border: 1px solid var(--line);"><input type="text" data-field="contract_fee_note" placeholder="结算周期与审计条款" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="field">
+          <label>合同条款风险与行动清单</label>
+          <textarea id="t22-contract-checklist" data-deliverable data-field="contract_checklist" placeholder="列出未闭合条款、责任人、截止时间与跟进动作。"></textarea>
+        </div>
+        <div class="field">
+          <label>上传回复或许可证明（模拟）</label>
+          <input type="file" data-file />
+          <small data-file-meta>未选择文件</small>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button" data-save>保存草稿</button>
+          <button class="button secondary" data-export>导出材料包</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>T2.1 AI 工具</h2>
+        <p>按清单辅助生成报告结构；不输出未经引用的法律结论。</p>
+        <div class="ai-tools">
+          <button data-ai-tool="AI01" data-target="t21-rights-report">AI01</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>T2.2 AI 工具</h2>
+        <p>润色邮件语气与结构（不得编造事实/费用/授权状态），并检查是否包含敏感文本。</p>
+        <div class="ai-tools">
+          <button data-ai-tool="AI04" data-target="t22-contract-checklist">AI04</button>
+          <button data-ai-tool="AI05" data-target="t22-contract-checklist">AI05</button>
+        </div>
+      </div>
+
+      <div class="panel" data-knowledge-panel>
+        <h2>知识库</h2>
+        <p>当前步骤与任务对应的知识点与关键说明。</p>
+        <div data-knowledge-content></div>
+      </div>
+
+      <div class="panel">
+        <h2>AI 使用日志</h2>
+        <div class="log-box" data-ai-log></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Step 2 / 9 - 版权沟通信息决定后续翻译授权与预算安排。
+  </footer>
+
+  <script src="knowledge-base.js"></script>
+  <script src="step-config.js"></script>
+  <script src="case-studies.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

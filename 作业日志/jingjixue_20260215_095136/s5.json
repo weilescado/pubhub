@@ -1,0 +1,24 @@
+{
+  "aiLog": [],
+  "fileMeta": "",
+  "sections": {
+    "t5.1": {
+      "fields": {
+        "acceptance_metrics": "术语一致率>=97%，致命错误=0。",
+        "wbs_breakdown": "章节拆分为18个任务包。"
+      },
+      "fileMeta": "",
+      "text": ""
+    },
+    "t5.2": {
+      "fields": {
+        "progress_log": "W1-W3按计划推进，W4因术语争议延迟1天。",
+        "quality_gate_report": "问题密度从每千词6.2降至2.1。",
+        "updated_plan": "增加每周一次术语审校会。"
+      },
+      "fileMeta": "",
+      "text": "初译v0.9完成。"
+    }
+  },
+  "text": ""
+}

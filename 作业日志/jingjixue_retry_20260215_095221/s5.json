@@ -1,0 +1,24 @@
+{
+  "aiLog": [],
+  "fileMeta": "",
+  "sections": {
+    "t5.1": {
+      "fields": {
+        "acceptance_metrics": "术语一致率>=97%",
+        "wbs_breakdown": "18个任务包"
+      },
+      "fileMeta": "",
+      "text": ""
+    },
+    "t5.2": {
+      "fields": {
+        "progress_log": "每周日志完整",
+        "quality_gate_report": "问题密度显著下降",
+        "updated_plan": "增加术语周会"
+      },
+      "fileMeta": "",
+      "text": "初译v0.9完成"
+    }
+  },
+  "text": ""
+}

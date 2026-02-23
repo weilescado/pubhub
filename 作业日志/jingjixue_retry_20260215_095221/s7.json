@@ -1,0 +1,23 @@
+{
+  "aiLog": [],
+  "fileMeta": "",
+  "sections": {
+    "t7.1": {
+      "fields": {
+        "review_1_log": "同伴互审完成",
+        "review_2_log": "专家审校完成",
+        "review_3_log": "终审完成"
+      },
+      "fileMeta": "",
+      "text": ""
+    },
+    "t7.2": {
+      "fields": {
+        "qc_report": "QA检查通过"
+      },
+      "fileMeta": "未选择文件",
+      "text": "终校通过"
+    }
+  },
+  "text": ""
+}

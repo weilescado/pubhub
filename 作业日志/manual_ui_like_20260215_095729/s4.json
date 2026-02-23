@@ -1,0 +1,49 @@
+{
+  "aiLog": [
+    {
+      "input": "term_v1_en_1: soft budget constraint\nterm_v1_cn_1: 软预算约束\nterm_decisions: 争议术语形成决策记录。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5e8a0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:57:34.673768",
+      "tool": "AI02"
+    },
+    {
+      "input": "term_v1_en_1: soft budget constraint\nterm_v1_cn_1: 软预算约束\nterm_decisions: 争议术语形成决策记录。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5f680>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:57:34.674831",
+      "tool": "AI01"
+    },
+    {
+      "input": "style_sheet: 采用US拼写，统一术语首现格式。\nstyle_term_link: 风格表与术语表联动检查。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5ecf0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:57:34.676974",
+      "tool": "AI02"
+    },
+    {
+      "input": "style_sheet: 采用US拼写，统一术语首现格式。\nstyle_term_link: 风格表与术语表联动检查。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5f0b0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:57:34.678187",
+      "tool": "AI01"
+    }
+  ],
+  "fileMeta": "",
+  "sections": {
+    "t4.1": {
+      "fields": {
+        "term_decisions": "争议术语形成决策记录。",
+        "term_v1_cn_1": "软预算约束",
+        "term_v1_en_1": "soft budget constraint"
+      },
+      "fileMeta": "未选择文件",
+      "text": ""
+    },
+    "t4.2": {
+      "fields": {
+        "style_sheet": "采用US拼写，统一术语首现格式。",
+        "style_term_link": "风格表与术语表联动检查。"
+      },
+      "fileMeta": "",
+      "text": ""
+    }
+  },
+  "text": ""
+}

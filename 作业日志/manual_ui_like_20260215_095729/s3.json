@@ -1,0 +1,63 @@
+{
+  "aiLog": [
+    {
+      "input": "sample_scope: 第2章1-3节，约6200字。\ntranslation_brief: 面向研究生与政策分析读者，保持学术清晰表达。\nterm_en_1: fiscal decentralization\nterm_cn_1: 财政分权",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5cfe0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:57:34.661418",
+      "tool": "AI02"
+    },
+    {
+      "input": "sample_scope: 第2章1-3节，约6200字。\ntranslation_brief: 面向研究生与政策分析读者，保持学术清晰表达。\nterm_en_1: fiscal decentralization\nterm_cn_1: 财政分权",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5d850>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:57:34.662423",
+      "tool": "AI03"
+    },
+    {
+      "input": "sample_scope: 第2章1-3节，约6200字。\ntranslation_brief: 面向研究生与政策分析读者，保持学术清晰表达。\nterm_en_1: fiscal decentralization\nterm_cn_1: 财政分权",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5e8d0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:57:34.663408",
+      "tool": "AI04"
+    },
+    {
+      "input": "样章v1完成。\nreview_comments: 术语一致性与句式流畅度需改善。\nsample_translation_v2: Revised sample translation draft.\nresponse_log: 已逐条回应评审意见。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5f710>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:57:34.665439",
+      "tool": "AI02"
+    },
+    {
+      "input": "样章v1完成。\nreview_comments: 术语一致性与句式流畅度需改善。\nsample_translation_v2: Revised sample translation draft.\nresponse_log: 已逐条回应评审意见。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5da30>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:57:34.666377",
+      "tool": "AI03"
+    },
+    {
+      "input": "样章v1完成。\nreview_comments: 术语一致性与句式流畅度需改善。\nsample_translation_v2: Revised sample translation draft.\nresponse_log: 已逐条回应评审意见。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5e570>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:57:34.667292",
+      "tool": "AI04"
+    }
+  ],
+  "fileMeta": "",
+  "sections": {
+    "t3.1": {
+      "fields": {
+        "sample_scope": "第2章1-3节，约6200字。",
+        "term_cn_1": "财政分权",
+        "term_en_1": "fiscal decentralization",
+        "translation_brief": "面向研究生与政策分析读者，保持学术清晰表达。"
+      },
+      "fileMeta": "",
+      "text": ""
+    },
+    "t3.2": {
+      "fields": {
+        "response_log": "已逐条回应评审意见。",
+        "review_comments": "术语一致性与句式流畅度需改善。",
+        "sample_translation_v2": "Revised sample translation draft."
+      },
+      "fileMeta": "",
+      "text": "样章v1完成。"
+    }
+  },
+  "text": ""
+}

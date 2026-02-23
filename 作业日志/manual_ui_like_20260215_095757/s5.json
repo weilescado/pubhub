@@ -1,0 +1,61 @@
+{
+  "aiLog": [
+    {
+      "input": "wbs_breakdown: 按章节拆分18个任务包。\nacceptance_metrics: 术语一致率>=97%，致命错误=0。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e6b740>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.925653",
+      "tool": "AI01"
+    },
+    {
+      "input": "wbs_breakdown: 按章节拆分18个任务包。\nacceptance_metrics: 术语一致率>=97%，致命错误=0。\n\n[AI建议]\n[离线回退建议] 建议补充目标读者、竞品差异和可量化指标。（原上下文长度: 66）",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e9c7d0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.927376",
+      "tool": "AI03"
+    },
+    {
+      "input": "wbs_breakdown: 按章节拆分18个任务包。\nacceptance_metrics: 术语一致率>=97%，致命错误=0。\n\n[AI建议]\n[离线回退建议] 建议补充目标读者、竞品差异和可量化指标。（原上下文长度: 66）\n\n[AI建议]\n[离线回退建议] 建议核查漏译、术语一致性和句子对应关系。（原上下文长度: 116）",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e6a570>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.928417",
+      "tool": "AI05"
+    },
+    {
+      "input": "初译v0.9完成。\nprogress_log: 每周记录进度与偏差。\nquality_gate_report: 问题密度持续下降。\nupdated_plan: 加入缓冲并强化周会机制。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e68f20>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.930233",
+      "tool": "AI01"
+    },
+    {
+      "input": "初译v0.9完成。\nprogress_log: 每周记录进度与偏差。\n\n[AI建议]\n[离线回退建议] 建议补充目标读者、竞品差异和可量化指标。（原上下文长度: 92）\nquality_gate_report: 问题密度持续下降。\nupdated_plan: 加入缓冲并强化周会机制。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e4e390>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.931413",
+      "tool": "AI03"
+    },
+    {
+      "input": "初译v0.9完成。\nprogress_log: 每周记录进度与偏差。\n\n[AI建议]\n[离线回退建议] 建议补充目标读者、竞品差异和可量化指标。（原上下文长度: 92）\n\n[AI建议]\n[离线回退建议] 建议核查漏译、术语一致性和句子对应关系。（原上下文长度: 142）\nquality_gate_report: 问题密度持续下降。\nupdated_plan: 加入缓冲并强化周会机制。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e6a600>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.932346",
+      "tool": "AI05"
+    }
+  ],
+  "fileMeta": "",
+  "sections": {
+    "t5.1": {
+      "fields": {
+        "acceptance_metrics": "术语一致率>=97%，致命错误=0。\n\n[AI建议]\n[离线回退建议] 建议补充目标读者、竞品差异和可量化指标。（原上下文长度: 66）\n\n[AI建议]\n[离线回退建议] 建议核查漏译、术语一致性和句子对应关系。（原上下文长度: 116）\n\n[AI建议]\n[离线回退建议] 建议压缩冗余表达，增强逻辑连接与可读性。（原上下文长度: 167）",
+        "wbs_breakdown": "按章节拆分18个任务包。\n[修订] 已根据AI点评补充可执行细节。"
+      },
+      "fileMeta": "",
+      "text": "根据AI导师点评已执行修订：补充证据链、明确行动项、统一术语与结构。"
+    },
+    "t5.2": {
+      "fields": {
+        "progress_log": "每周记录进度与偏差。\n\n[AI建议]\n[离线回退建议] 建议补充目标读者、竞品差异和可量化指标。（原上下文长度: 92）\n\n[AI建议]\n[离线回退建议] 建议核查漏译、术语一致性和句子对应关系。（原上下文长度: 142）\n\n[AI建议]\n[离线回退建议] 建议压缩冗余表达，增强逻辑连接与可读性。（原上下文长度: 193）\n[修订] 已根据AI点评补充可执行细节。",
+        "quality_gate_report": "问题密度持续下降。",
+        "updated_plan": "加入缓冲并强化周会机制。"
+      },
+      "fileMeta": "",
+      "text": "初译v0.9完成。\n根据AI导师点评已执行修订：补充证据链、明确行动项、统一术语与结构。"
+    }
+  },
+  "text": ""
+}

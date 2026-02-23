@@ -1,0 +1,61 @@
+{
+  "aiLog": [
+    {
+      "input": "wbs_breakdown: 按章节拆分18个任务包。\nacceptance_metrics: 术语一致率>=97%，致命错误=0。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5d640>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:57:34.685603",
+      "tool": "AI01"
+    },
+    {
+      "input": "wbs_breakdown: 按章节拆分18个任务包。\nacceptance_metrics: 术语一致率>=97%，致命错误=0。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5d2b0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:57:34.686749",
+      "tool": "AI03"
+    },
+    {
+      "input": "wbs_breakdown: 按章节拆分18个任务包。\nacceptance_metrics: 术语一致率>=97%，致命错误=0。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5fb00>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:57:34.687793",
+      "tool": "AI05"
+    },
+    {
+      "input": "初译v0.9完成。\nprogress_log: 每周记录进度与偏差。\nquality_gate_report: 问题密度持续下降。\nupdated_plan: 加入缓冲并强化周会机制。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5cb00>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:57:34.690640",
+      "tool": "AI01"
+    },
+    {
+      "input": "初译v0.9完成。\nprogress_log: 每周记录进度与偏差。\nquality_gate_report: 问题密度持续下降。\nupdated_plan: 加入缓冲并强化周会机制。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5d700>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:57:34.691676",
+      "tool": "AI03"
+    },
+    {
+      "input": "初译v0.9完成。\nprogress_log: 每周记录进度与偏差。\nquality_gate_report: 问题密度持续下降。\nupdated_plan: 加入缓冲并强化周会机制。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5fe90>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:57:34.692632",
+      "tool": "AI05"
+    }
+  ],
+  "fileMeta": "",
+  "sections": {
+    "t5.1": {
+      "fields": {
+        "acceptance_metrics": "术语一致率>=97%，致命错误=0。",
+        "wbs_breakdown": "按章节拆分18个任务包。"
+      },
+      "fileMeta": "",
+      "text": ""
+    },
+    "t5.2": {
+      "fields": {
+        "progress_log": "每周记录进度与偏差。",
+        "quality_gate_report": "问题密度持续下降。",
+        "updated_plan": "加入缓冲并强化周会机制。"
+      },
+      "fileMeta": "",
+      "text": "初译v0.9完成。"
+    }
+  },
+  "text": ""
+}

@@ -1,0 +1,140 @@
+{
+  "run_at": "2026-02-15T09:51:36.154952",
+  "user": {
+    "email": "jingjixue",
+    "password": "123456",
+    "resolved_user_id": "9b8cd5aa-ba97-43ee-94ce-859af5b21710"
+  },
+  "selected_books": [
+    "《变量：中国社会运行的逻辑》（何帆）",
+    "《激荡三十年：中国企业1978-2008》（吴晓波）",
+    "《置身事内：中国政府与经济发展》（兰小欢）"
+  ],
+  "actions": [
+    {
+      "action": "register",
+      "status": 409,
+      "body": {
+        "error": "Email already exists"
+      }
+    },
+    {
+      "action": "login",
+      "status": 200,
+      "body": {
+        "message": "Login successful",
+        "user": {
+          "email": "jingjixue",
+          "id": "9b8cd5aa-ba97-43ee-94ce-859af5b21710",
+          "isAdmin": false
+        }
+      }
+    },
+    {
+      "action": "save_s1",
+      "status": 500,
+      "body": null
+    },
+    {
+      "action": "load_s1",
+      "status": 200,
+      "has_sections": false
+    },
+    {
+      "action": "save_s2",
+      "status": 200,
+      "body": {
+        "message": "Saved"
+      }
+    },
+    {
+      "action": "load_s2",
+      "status": 200,
+      "has_sections": true
+    },
+    {
+      "action": "save_s3",
+      "status": 200,
+      "body": {
+        "message": "Saved"
+      }
+    },
+    {
+      "action": "load_s3",
+      "status": 200,
+      "has_sections": true
+    },
+    {
+      "action": "save_s4",
+      "status": 200,
+      "body": {
+        "message": "Saved"
+      }
+    },
+    {
+      "action": "load_s4",
+      "status": 200,
+      "has_sections": true
+    },
+    {
+      "action": "save_s5",
+      "status": 200,
+      "body": {
+        "message": "Saved"
+      }
+    },
+    {
+      "action": "load_s5",
+      "status": 200,
+      "has_sections": true
+    },
+    {
+      "action": "save_s6",
+      "status": 200,
+      "body": {
+        "message": "Saved"
+      }
+    },
+    {
+      "action": "load_s6",
+      "status": 200,
+      "has_sections": true
+    },
+    {
+      "action": "save_s7",
+      "status": 200,
+      "body": {
+        "message": "Saved"
+      }
+    },
+    {
+      "action": "load_s7",
+      "status": 200,
+      "has_sections": true
+    },
+    {
+      "action": "save_s8",
+      "status": 200,
+      "body": {
+        "message": "Saved"
+      }
+    },
+    {
+      "action": "load_s8",
+      "status": 200,
+      "has_sections": true
+    },
+    {
+      "action": "save_s9",
+      "status": 200,
+      "body": {
+        "message": "Saved"
+      }
+    },
+    {
+      "action": "load_s9",
+      "status": 200,
+      "has_sections": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "aiLog": [],
+  "fileMeta": "",
+  "sections": {
+    "t4.1": {
+      "fields": {
+        "term_decisions": "关键争议项已记录。",
+        "term_v1_cn_1": "软预算约束",
+        "term_v1_en_1": "soft budget constraint"
+      },
+      "fileMeta": "未选择文件",
+      "text": ""
+    },
+    "t4.2": {
+      "fields": {
+        "style_sheet": "US拼写+术语首现括注。",
+        "style_term_link": "术语表联动。"
+      },
+      "fileMeta": "",
+      "text": ""
+    }
+  },
+  "text": ""
+}

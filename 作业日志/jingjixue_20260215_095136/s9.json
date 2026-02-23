@@ -1,0 +1,23 @@
+{
+  "aiLog": [],
+  "fileMeta": "",
+  "sections": {
+    "t9.1": {
+      "fields": {
+        "submission_confirmation": "Targeted editor in comparative political economy list.",
+        "upload_checklist": "v1.0 proposal pack, hash optional."
+      },
+      "fileMeta": "",
+      "text": "模拟提交流程完成。"
+    },
+    "t9.2": {
+      "fields": {
+        "archive_note": "Assets archived: terminology, style sheet, proposal templates, process export.",
+        "review_comments_summary": "Drafted follow-up email for revise-and-resubmit scenario."
+      },
+      "fileMeta": "",
+      "text": "反馈闭环与复盘完成。"
+    }
+  },
+  "text": ""
+}

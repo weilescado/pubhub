@@ -1,0 +1,636 @@
+{
+  "started_at": "2026-02-15T09:57:29.399755",
+  "mode": "ui-like manual simulation via backend endpoints",
+  "user": {
+    "email": "jingjixue"
+  },
+  "steps": [
+    {
+      "step": "s1",
+      "tools": [
+        {
+          "task": "t1.1",
+          "tool": "AI01",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1066d2cc0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t1.1",
+          "tool": "AI04",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bf7200>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t1.2",
+          "tool": "AI01",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bdb7d0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t1.2",
+          "tool": "AI04",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bf78f0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "reviews": [
+        {
+          "task": "t1.1",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5c230>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t1.2",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bf6810>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "save": [
+        {
+          "phase": "initial",
+          "status": 500,
+          "body": null
+        },
+        {
+          "phase": "final",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        }
+      ],
+      "verify_status": 200,
+      "verified_sections": [
+        "t1.1",
+        "t1.2"
+      ]
+    },
+    {
+      "step": "s2",
+      "tools": [
+        {
+          "task": "t2.1",
+          "tool": "AI01",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bf65a0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t2.1",
+          "tool": "AI04",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bf7890>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t2.1",
+          "tool": "AI05",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5c3e0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t2.2",
+          "tool": "AI01",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x104e8b380>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t2.2",
+          "tool": "AI04",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bf7980>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t2.2",
+          "tool": "AI05",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5cd10>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "reviews": [
+        {
+          "task": "t2.1",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5cf80>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t2.2",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5e450>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "save": [
+        {
+          "phase": "initial",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        },
+        {
+          "phase": "final",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        }
+      ],
+      "verify_status": 200,
+      "verified_sections": [
+        "t2.1",
+        "t2.2"
+      ]
+    },
+    {
+      "step": "s3",
+      "tools": [
+        {
+          "task": "t3.1",
+          "tool": "AI02",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5cfe0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t3.1",
+          "tool": "AI03",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5d850>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t3.1",
+          "tool": "AI04",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5e8d0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t3.2",
+          "tool": "AI02",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5f710>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t3.2",
+          "tool": "AI03",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5da30>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t3.2",
+          "tool": "AI04",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5e570>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "reviews": [
+        {
+          "task": "t3.1",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bdbef0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t3.2",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bf72c0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "save": [
+        {
+          "phase": "initial",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        },
+        {
+          "phase": "final",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        }
+      ],
+      "verify_status": 200,
+      "verified_sections": [
+        "t3.1",
+        "t3.2"
+      ]
+    },
+    {
+      "step": "s4",
+      "tools": [
+        {
+          "task": "t4.1",
+          "tool": "AI02",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5e8a0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t4.1",
+          "tool": "AI01",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5f680>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t4.2",
+          "tool": "AI02",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5ecf0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t4.2",
+          "tool": "AI01",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5f0b0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "reviews": [
+        {
+          "task": "t4.1",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c6c5f0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t4.2",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bf78f0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "save": [
+        {
+          "phase": "initial",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        },
+        {
+          "phase": "final",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        }
+      ],
+      "verify_status": 200,
+      "verified_sections": [
+        "t4.1",
+        "t4.2"
+      ]
+    },
+    {
+      "step": "s5",
+      "tools": [
+        {
+          "task": "t5.1",
+          "tool": "AI01",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5d640>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t5.1",
+          "tool": "AI03",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5d2b0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t5.1",
+          "tool": "AI05",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5fb00>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t5.2",
+          "tool": "AI01",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5cb00>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t5.2",
+          "tool": "AI03",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5d700>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t5.2",
+          "tool": "AI05",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5fe90>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "reviews": [
+        {
+          "task": "t5.1",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10632db80>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t5.2",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5e0f0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "save": [
+        {
+          "phase": "initial",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        },
+        {
+          "phase": "final",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        }
+      ],
+      "verify_status": 200,
+      "verified_sections": [
+        "t5.1",
+        "t5.2"
+      ]
+    },
+    {
+      "step": "s6",
+      "tools": [
+        {
+          "task": "t6.1",
+          "tool": "AI04",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5c590>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t6.1",
+          "tool": "AI05",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bf7aa0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t6.1",
+          "tool": "AI01",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bf7e00>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t6.2",
+          "tool": "AI04",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5e720>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t6.2",
+          "tool": "AI05",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5ddc0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t6.2",
+          "tool": "AI01",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5c830>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "reviews": [
+        {
+          "task": "t6.1",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5e990>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t6.2",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5cef0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "save": [
+        {
+          "phase": "initial",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        },
+        {
+          "phase": "final",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        }
+      ],
+      "verify_status": 200,
+      "verified_sections": [
+        "t6.1",
+        "t6.2"
+      ]
+    },
+    {
+      "step": "s7",
+      "tools": [
+        {
+          "task": "t7.1",
+          "tool": "AI03",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bf7bf0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t7.1",
+          "tool": "AI05",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c6d070>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t7.2",
+          "tool": "AI03",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5fb30>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t7.2",
+          "tool": "AI05",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5fe90>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "reviews": [
+        {
+          "task": "t7.1",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bf7590>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t7.2",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c6d730>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "save": [
+        {
+          "phase": "initial",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        },
+        {
+          "phase": "final",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        }
+      ],
+      "verify_status": 200,
+      "verified_sections": [
+        "t7.1",
+        "t7.2"
+      ]
+    },
+    {
+      "step": "s8",
+      "tools": [
+        {
+          "task": "t8.1",
+          "tool": "AI04",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bf4500>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t8.1",
+          "tool": "AI05",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bdbf80>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t8.2",
+          "tool": "AI04",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bf7080>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t8.2",
+          "tool": "AI05",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5e1e0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "reviews": [
+        {
+          "task": "t8.1",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c6d910>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t8.2",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5ff50>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "save": [
+        {
+          "phase": "initial",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        },
+        {
+          "phase": "final",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        }
+      ],
+      "verify_status": 200,
+      "verified_sections": [
+        "t8.1",
+        "t8.2"
+      ]
+    },
+    {
+      "step": "s9",
+      "tools": [
+        {
+          "task": "t9.1",
+          "tool": "AI04",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5d8b0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t9.1",
+          "tool": "AI01",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5d940>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t9.1",
+          "tool": "AI05",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bf6480>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t9.2",
+          "tool": "AI04",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106bf6f30>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t9.2",
+          "tool": "AI01",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5e720>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t9.2",
+          "tool": "AI05",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c5e960>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "reviews": [
+        {
+          "task": "t9.1",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c6cfb0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        },
+        {
+          "task": "t9.2",
+          "status": 500,
+          "result_preview": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106c6e7e0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+        }
+      ],
+      "save": [
+        {
+          "phase": "initial",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        },
+        {
+          "phase": "final",
+          "status": 200,
+          "body": {
+            "message": "Saved"
+          }
+        }
+      ],
+      "verify_status": 200,
+      "verified_sections": [
+        "t9.1",
+        "t9.2"
+      ]
+    }
+  ],
+  "register": {
+    "status": 409,
+    "body": {
+      "error": "Email already exists"
+    }
+  },
+  "login": {
+    "status": 200,
+    "user_id": "9b8cd5aa-ba97-43ee-94ce-859af5b21710"
+  },
+  "finished_at": "2026-02-15T09:57:34.743103"
+}

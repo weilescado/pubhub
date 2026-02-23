@@ -1,0 +1,26 @@
+{
+  "aiLog": [],
+  "fileMeta": "",
+  "sections": {
+    "t3.1": {
+      "fields": {
+        "sample_scope": "第2章第1-3节，约6200字；覆盖核心机制与案例。",
+        "term_cn_1": "财政分权",
+        "term_en_1": "fiscal decentralization",
+        "translation_brief": "目标读者为政策研究与发展经济学读者，语体采用学术非虚构风格。"
+      },
+      "fileMeta": "",
+      "text": ""
+    },
+    "t3.2": {
+      "fields": {
+        "response_log": "已逐条回应12条意见，采纳10条，2条保留并解释。",
+        "review_comments": "术语一致性需加强；长句拆分不足。",
+        "sample_translation_v2": "Revised version improves readability and terminology consistency."
+      },
+      "fileMeta": "",
+      "text": "样章v1已完成，评审后修订为v2。"
+    }
+  },
+  "text": ""
+}

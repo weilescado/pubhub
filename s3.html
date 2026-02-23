@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S3 样章翻译 - 高校国际出版流程模拟实训平台</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page" data-step="s3">
+  <header class="topbar">
+    <div class="brand">
+      <small>Step 03</small>
+      <strong>样章翻译</strong>
+    </div>
+    <nav>
+      <a class="nav-link" href="index.html">概览</a>
+      <a class="nav-link" href="s2.html">上一步 ← S2 版权沟通</a>
+      <a class="nav-link" href="s4.html">下一步 → S4 术语表建立</a>
+    </nav>
+  </header>
+
+  <main class="layout fade-in">
+    <aside class="panel">
+      <h2>任务目标</h2>
+      <p>样章翻译与评审迭代。</p>
+      <ul>
+        <li>样章范围说明与翻译报告</li>
+        <li>术语预抽取与候选清单</li>
+        <li>评审→修订→回应记录</li>
+      </ul>
+    </aside>
+
+    <section class="workspace">
+      <div class="panel" data-section="t3.1">
+        <h2>T3.1 样章选取+翻译报告+术语预抽取</h2>
+        <p>确定样章范围并进行翻译；完成术语抽取，为样章翻译与评审建立标准。</p>
+        <div class="field">
+          <label>样章范围说明（含字数）</label>
+          <textarea data-field="sample_scope" placeholder="说明样章范围及其代表性理由..."></textarea>
+        </div>
+        <div class="field">
+          <label>样章翻译报告</label>
+          <textarea id="t31-translation-brief" data-field="translation_brief" placeholder="目标读者、语体、文化项处理、译注策略、风险点..."></textarea>
+        </div>
+        <div class="field">
+          <label>术语候选清单 (Proposed)</label>
+          <div style="margin-bottom: 12px; display: flex; gap: 10px; align-items: center;">
+            <button class="button ghost small" data-download-template>下载 Excel 模板</button>
+            <div style="position: relative; overflow: hidden; display: inline-block;">
+              <button class="button ghost small">上传 Excel 表格</button>
+              <input type="file" data-upload-excel accept=".xlsx, .xls" style="position: absolute; left: 0; top: 0; opacity: 0; cursor: pointer; height: 100%; width: 100%;" />
+            </div>
+            <small style="color: #666;">支持 .xlsx 格式，上传后将自动填充下方表格。</small>
+          </div>
+          <div style="overflow-x: auto; max-height: 400px; border: 1px solid var(--line);">
+            <table style="width: 100%; border-collapse: collapse; margin-top: 0;">
+              <thead style="position: sticky; top: 0; background: #f9f9f9; z-index: 1;">
+                <tr>
+                  <th style="width: 50px; text-align: center; padding: 8px; border: 1px solid var(--line);">序号</th>
+                  <th style="text-align: left; padding: 8px; border: 1px solid var(--line);">英文术语 (English)</th>
+                  <th style="text-align: left; padding: 8px; border: 1px solid var(--line);">中文术语 (Chinese)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align: center; padding: 8px; border: 1px solid var(--line);">1</td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_en_1" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_cn_1" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; padding: 8px; border: 1px solid var(--line);">2</td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_en_2" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_cn_2" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; padding: 8px; border: 1px solid var(--line);">3</td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_en_3" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_cn_3" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; padding: 8px; border: 1px solid var(--line);">4</td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_en_4" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_cn_4" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; padding: 8px; border: 1px solid var(--line);">5</td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_en_5" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_cn_5" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; padding: 8px; border: 1px solid var(--line);">6</td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_en_6" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_cn_6" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; padding: 8px; border: 1px solid var(--line);">7</td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_en_7" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_cn_7" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; padding: 8px; border: 1px solid var(--line);">8</td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_en_8" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_cn_8" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; padding: 8px; border: 1px solid var(--line);">9</td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_en_9" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_cn_9" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; padding: 8px; border: 1px solid var(--line);">10</td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_en_10" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                  <td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_cn_10" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button" data-save>保存草稿</button>
+          <button class="button secondary" data-export>导出材料包</button>
+        </div>
+      </div>
+
+      <div class="panel" data-section="t3.2">
+        <h2>T3.2 样章翻译v1→评审→v2（回应记录）</h2>
+        <p>完成样章翻译并通过同伴+教师评审迭代，产出v2版本与回应记录。</p>
+        <div class="field">
+          <label>样章译文 v1</label>
+          <textarea id="t32-sample-v1" data-deliverable placeholder="输入样章译文 v1..."></textarea>
+        </div>
+        <div class="field">
+          <label>评审意见表</label>
+          <textarea data-field="review_comments" placeholder="记录评审意见..."></textarea>
+        </div>
+        <div class="field">
+          <label>样章译文 v2</label>
+          <textarea data-field="sample_translation_v2" placeholder="输入样章译文 v2 (修订版)..."></textarea>
+        </div>
+        <div class="field">
+          <label>回应表 (Response Log)</label>
+          <textarea id="t32-response-log" data-field="response_log" placeholder="对评审意见的回应..."></textarea>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button" data-save>保存草稿</button>
+          <button class="button secondary" data-export>导出材料包</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>T3.1 AI 工具</h2>
+        <p>术语抽取与候选译法建议；必须人工确认后入库。</p>
+        <div class="ai-tools">
+          <button data-ai-tool="AI02" data-target="t31-translation-brief">AI02</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>T3.2 AI 工具</h2>
+        <p>对齐检测漏译/一致性问题，辅助英文回应措辞（不承诺无法兑现内容）。</p>
+        <div class="ai-tools">
+          <button data-ai-tool="AI03" data-target="t32-sample-v1">AI03</button>
+          <button data-ai-tool="AI04" data-target="t32-response-log">AI04</button>
+        </div>
+      </div>
+
+
+      <div class="panel" data-knowledge-panel>
+        <h2>知识库</h2>
+        <p>当前步骤与任务对应的知识点与关键说明。</p>
+        <div data-knowledge-content></div>
+      </div>
+
+      <div class="panel">
+        <h2>AI 使用日志</h2>
+        <div class="log-box" data-ai-log></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Step 3 / 9 - 样章质量决定国际出版社的初步判断。
+  </footer>
+
+  <script src="knowledge-base.js"></script>
+  <script src="vendor-xlsx.min.js"></script>
+  <script src="step-config.js"></script>
+  <script src="case-studies.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

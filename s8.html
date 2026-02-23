@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S8 投稿材料准备 - 高校国际出版流程模拟实训平台</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page" data-step="s8">
+  <header class="topbar">
+    <div class="brand">
+      <small>Step 08</small>
+      <strong>投稿材料准备</strong>
+    </div>
+    <nav>
+      <a class="nav-link" href="index.html">概览</a>
+      <a class="nav-link" href="s7.html">上一步 ← S7 审校机制设计</a>
+      <a class="nav-link" href="s9.html">下一步 → S9 模拟投稿</a>
+    </nav>
+  </header>
+
+  <main class="layout fade-in">
+    <aside class="panel">
+      <h2>任务目标</h2>
+      <p>Book Proposal→Pitch包+合规终检。</p>
+      <ul>
+        <li>Book Proposal编制（按模板）</li>
+        <li>Pitch Letter与推介包组装</li>
+        <li>提交前合规终检与Checklist</li>
+      </ul>
+    </aside>
+
+    <section class="workspace">
+      <div class="panel" data-section="t8.1">
+        <h2>T8.1 Book Proposal编制（按目标出版社模板）</h2>
+        <p>完成符合目标出版社要求的Book Proposal（内容+市场+竞品+进度+作者/译者信息）。</p>
+        <div class="field">
+          <label>Book Proposal（按模板）</label>
+          <textarea id="t81-cover-letter" data-deliverable placeholder="按模板填写概要、目录与章节简介、读者与市场、竞品、作者/译者信息、进度与交付..."></textarea>
+        </div>
+        <div class="field">
+          <label>目录+章节简介/市场与竞品要点</label>
+          <textarea id="t81-abstract" data-field="optimized_abstract" placeholder="整理目录、章节简介与市场/竞品要点..."></textarea>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button" data-save>保存草稿</button>
+          <button class="button secondary" data-export>导出材料包</button>
+        </div>
+      </div>
+
+      <div class="panel" data-section="t8.2">
+        <h2>T8.2 Pitch Letter+推介包组装+提交前合规终检</h2>
+        <p>形成可发送给编辑的推介包，并完成版权+AI+保密合规终检与Checklist签署。</p>
+        <div class="field">
+          <label>Pitch/Query Letter（英文）</label>
+          <textarea data-field="author_bio" placeholder="撰写1页内Pitch/Query Letter，突出价值、定位与差异化..."></textarea>
+        </div>
+        <div class="field">
+          <label>推介包附件清单</label>
+          <textarea data-field="blurbs" placeholder="列出Pitch Letter、Book Proposal、Synopsis、Sample Translation、Bio、Rights Summary等附件..."></textarea>
+        </div>
+        <div class="field">
+          <label>提交前Checklist/合规材料包</label>
+          <textarea id="t82-marketing-materials" data-field="marketing_materials" placeholder="记录Checklist签署情况与合规材料（rights/permissions/AI disclosure）..."></textarea>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button" data-save>保存草稿</button>
+          <button class="button secondary" data-export>导出材料包</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>AI 辅助工具</h2>
+        <p>润色Pitch Letter与合规扫描。</p>
+        <div class="ai-tools">
+          <button data-ai-tool="AI04" data-target="t81-cover-letter">AI04</button>
+          <button data-ai-tool="AI05" data-target="t82-marketing-materials">AI05</button>
+        </div>
+      </div>
+
+
+      <div class="panel" data-knowledge-panel>
+        <h2>知识库</h2>
+        <p>当前步骤与任务对应的知识点与关键说明。</p>
+        <div data-knowledge-content></div>
+      </div>
+
+      <div class="panel">
+        <h2>AI 使用日志</h2>
+        <div class="log-box" data-ai-log></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Step 8 / 9 - 投稿材料准备决定提交质量与编辑第一印象。
+  </footer>
+
+  <script src="knowledge-base.js"></script>
+  <script src="step-config.js"></script>
+  <script src="case-studies.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{
+  "aiLog": [
+    {
+      "input": "v1.0润色稿完成。\npolishing_log: 统一语体、缩短冗长句、增强衔接。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e4c9b0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.937440",
+      "tool": "AI04"
+    },
+    {
+      "input": "v1.0润色稿完成。\npolishing_log: 统一语体、缩短冗长句、增强衔接。\n\n[AI建议]\n[离线回退建议] 建议统一关键术语译法并注明首次定义。（原上下文长度: 42）",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e6be90>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.938624",
+      "tool": "AI05"
+    },
+    {
+      "input": "v1.0润色稿完成。\npolishing_log: 统一语体、缩短冗长句、增强衔接。\n\n[AI建议]\n[离线回退建议] 建议统一关键术语译法并注明首次定义。（原上下文长度: 42）\n\n[AI建议]\n[离线回退建议] 建议压缩冗余表达，增强逻辑连接与可读性。（原上下文长度: 90）",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e6afc0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.939572",
+      "tool": "AI01"
+    },
+    {
+      "input": "AI合规披露草案完成。\nexpert_feedback: 无高危合规问题。\npolishing_report: AI用途、输入边界、人工复核均已记录。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e4c590>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.941273",
+      "tool": "AI04"
+    },
+    {
+      "input": "AI合规披露草案完成。\nexpert_feedback: 无高危合规问题。\n\n[AI建议]\n[离线回退建议] 建议统一关键术语译法并注明首次定义。（原上下文长度: 75）\npolishing_report: AI用途、输入边界、人工复核均已记录。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e6af30>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.942404",
+      "tool": "AI05"
+    },
+    {
+      "input": "AI合规披露草案完成。\nexpert_feedback: 无高危合规问题。\n\n[AI建议]\n[离线回退建议] 建议统一关键术语译法并注明首次定义。（原上下文长度: 75）\n\n[AI建议]\n[离线回退建议] 建议压缩冗余表达，增强逻辑连接与可读性。（原上下文长度: 123）\npolishing_report: AI用途、输入边界、人工复核均已记录。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e68cb0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.943307",
+      "tool": "AI01"
+    }
+  ],
+  "fileMeta": "",
+  "sections": {
+    "t6.1": {
+      "fields": {
+        "polishing_log": "统一语体、缩短冗长句、增强衔接。\n\n[AI建议]\n[离线回退建议] 建议统一关键术语译法并注明首次定义。（原上下文长度: 42）\n\n[AI建议]\n[离线回退建议] 建议压缩冗余表达，增强逻辑连接与可读性。（原上下文长度: 90）\n\n[AI建议]\n[离线回退建议] 建议补充目标读者、竞品差异和可量化指标。（原上下文长度: 140）\n[修订] 已根据AI点评补充可执行细节。"
+      },
+      "fileMeta": "",
+      "text": "v1.0润色稿完成。\n根据AI导师点评已执行修订：补充证据链、明确行动项、统一术语与结构。"
+    },
+    "t6.2": {
+      "fields": {
+        "expert_feedback": "无高危合规问题。\n\n[AI建议]\n[离线回退建议] 建议统一关键术语译法并注明首次定义。（原上下文长度: 75）\n\n[AI建议]\n[离线回退建议] 建议压缩冗余表达，增强逻辑连接与可读性。（原上下文长度: 123）\n\n[AI建议]\n[离线回退建议] 建议补充目标读者、竞品差异和可量化指标。（原上下文长度: 174）\n[修订] 已根据AI点评补充可执行细节。",
+        "polishing_report": "AI用途、输入边界、人工复核均已记录。"
+      },
+      "fileMeta": "",
+      "text": "AI合规披露草案完成。\n根据AI导师点评已执行修订：补充证据链、明确行动项、统一术语与结构。"
+    }
+  },
+  "text": ""
+}

@@ -1,0 +1,48 @@
+{
+  "aiLog": [
+    {
+      "input": "review_1_log: 同伴互审完成。\nreview_2_log: 专家审校完成。\nreview_3_log: 终审通过。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e6bec0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.948602",
+      "tool": "AI03"
+    },
+    {
+      "input": "review_1_log: 同伴互审完成。\n\n[AI建议]\n[离线回退建议] 建议核查漏译、术语一致性和句子对应关系。（原上下文长度: 63）\nreview_2_log: 专家审校完成。\nreview_3_log: 终审通过。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e68620>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.949599",
+      "tool": "AI05"
+    },
+    {
+      "input": "终校通过。\nqc_report: QA报告完整，满足提交标准。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e4c8f0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.951707",
+      "tool": "AI03"
+    },
+    {
+      "input": "终校通过。\nqc_report: QA报告完整，满足提交标准。\n\n[AI建议]\n[离线回退建议] 建议核查漏译、术语一致性和句子对应关系。（原上下文长度: 31）",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e6ae10>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.953044",
+      "tool": "AI05"
+    }
+  ],
+  "fileMeta": "",
+  "sections": {
+    "t7.1": {
+      "fields": {
+        "review_1_log": "同伴互审完成。\n\n[AI建议]\n[离线回退建议] 建议核查漏译、术语一致性和句子对应关系。（原上下文长度: 63）\n\n[AI建议]\n[离线回退建议] 建议压缩冗余表达，增强逻辑连接与可读性。（原上下文长度: 113）\n[修订] 已根据AI点评补充可执行细节。",
+        "review_2_log": "专家审校完成。",
+        "review_3_log": "终审通过。"
+      },
+      "fileMeta": "",
+      "text": "根据AI导师点评已执行修订：补充证据链、明确行动项、统一术语与结构。"
+    },
+    "t7.2": {
+      "fields": {
+        "qc_report": "QA报告完整，满足提交标准。\n\n[AI建议]\n[离线回退建议] 建议核查漏译、术语一致性和句子对应关系。（原上下文长度: 31）\n\n[AI建议]\n[离线回退建议] 建议压缩冗余表达，增强逻辑连接与可读性。（原上下文长度: 81）\n[修订] 已根据AI点评补充可执行细节。"
+      },
+      "fileMeta": "未选择文件",
+      "text": "终校通过。\n根据AI导师点评已执行修订：补充证据链、明确行动项、统一术语与结构。"
+    }
+  },
+  "text": ""
+}

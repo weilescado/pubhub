@@ -1,0 +1,23 @@
+{
+  "aiLog": [],
+  "fileMeta": "",
+  "sections": {
+    "t9.1": {
+      "fields": {
+        "submission_confirmation": "target editor selected",
+        "upload_checklist": "proposal_v1 package"
+      },
+      "fileMeta": "",
+      "text": "模拟提交完成"
+    },
+    "t9.2": {
+      "fields": {
+        "archive_note": "assets archived",
+        "review_comments_summary": "reply drafted"
+      },
+      "fileMeta": "",
+      "text": "反馈闭环完成"
+    }
+  },
+  "text": ""
+}

@@ -1,0 +1,23 @@
+{
+  "aiLog": [],
+  "fileMeta": "",
+  "sections": {
+    "t7.1": {
+      "fields": {
+        "review_1_log": "同伴互审发现术语问题8处。",
+        "review_2_log": "专家审校修正概念译法3处。",
+        "review_3_log": "终审关闭全部致命问题。"
+      },
+      "fileMeta": "",
+      "text": ""
+    },
+    "t7.2": {
+      "fields": {
+        "qc_report": "QA报告完整，满足提交标准。"
+      },
+      "fileMeta": "未选择文件",
+      "text": "终校通过。"
+    }
+  },
+  "text": ""
+}

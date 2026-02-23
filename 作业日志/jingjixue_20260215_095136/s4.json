@@ -1,0 +1,26 @@
+{
+  "aiLog": [],
+  "fileMeta": "",
+  "sections": {
+    "t4.1": {
+      "fields": {
+        "term_decisions": "对'财政包干制'译法采用fiscal contracting system。",
+        "term_v1_cn_1": "软预算约束",
+        "term_v1_cn_2": "土地财政",
+        "term_v1_en_1": "soft budget constraint",
+        "term_v1_en_2": "land finance"
+      },
+      "fileMeta": "未选择文件",
+      "text": ""
+    },
+    "t4.2": {
+      "fields": {
+        "style_sheet": "采用US拼写；数字千分位；首次出现术语加括注。",
+        "style_term_link": "KP025术语表与风格表建立双向检查项。"
+      },
+      "fileMeta": "",
+      "text": ""
+    }
+  },
+  "text": ""
+}

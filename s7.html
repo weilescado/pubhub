@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S7 审校机制设计 - 高校国际出版流程模拟实训平台</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page" data-step="s7">
+  <header class="topbar">
+    <div class="brand">
+      <small>Step 07</small>
+      <strong>审校机制设计</strong>
+    </div>
+    <nav>
+      <a class="nav-link" href="index.html">概览</a>
+      <a class="nav-link" href="s6.html">上一步 ← S6 语言润色</a>
+      <a class="nav-link" href="s8.html">下一步 → S8 投稿材料准备</a>
+    </nav>
+  </header>
+
+  <main class="layout fade-in">
+    <aside class="panel">
+      <h2>任务目标</h2>
+      <p>多角色审校→终校验收。</p>
+      <ul>
+        <li>同伴互审与专家/母语审校</li>
+        <li>形成修订计划与回应记录</li>
+        <li>终校QA与定稿验收</li>
+      </ul>
+    </aside>
+
+    <section class="workspace">
+      <div class="panel" data-section="t7.1">
+        <h2>T7.1 审校机制执行：同伴互审+专家/母语审校</h2>
+        <p>通过多角色审校发现深层问题并形成可追溯反馈与修订计划。</p>
+        <div class="field">
+          <label>一审一校记录</label>
+          <textarea data-field="review_1_log" placeholder="记录初审发现的问题（错别字/格式/基础语法）..."></textarea>
+        </div>
+        <div class="field">
+          <label>二审二校记录</label>
+          <textarea data-field="review_2_log" placeholder="记录复审发现的问题（专业术语/一致性/敏感内容）..."></textarea>
+        </div>
+        <div class="field">
+          <label>三审三校记录</label>
+          <textarea data-field="review_3_log" placeholder="记录终审发现的问题（整体质量/出版规范/政治导向）..."></textarea>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button" data-save>保存草稿</button>
+          <button class="button secondary" data-export>导出材料包</button>
+        </div>
+      </div>
+
+      <div class="panel" data-section="t7.2">
+        <h2>T7.2 终校+定稿验收（Final Verification）</h2>
+        <p>完成终校、QA与合规终检，生成定稿版本与签署验收单。</p>
+        <div class="field">
+          <label>审校问题汇总表 (Query Sheet)</label>
+          <textarea id="t72-query-sheet" data-deliverable placeholder="列出待确认或待修改的问题清单..."></textarea>
+        </div>
+        <div class="field">
+          <label>质量控制报告 (QC Report)</label>
+          <textarea id="t72-qc-report" data-field="qc_report" placeholder="评估稿件是否达到出版标准（合格/需返工/不合格）..."></textarea>
+        </div>
+        <div class="field">
+          <label>上传审校稿件 (PDF/Word)</label>
+          <input type="file" data-file />
+          <small data-file-meta>未选择文件</small>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button" data-save>保存草稿</button>
+          <button class="button secondary" data-export>导出材料包</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>AI 辅助工具</h2>
+        <p>辅助定位漏译/一致性问题与合规扫描。</p>
+        <div class="ai-tools">
+          <button data-ai-tool="AI03" data-target="t72-query-sheet">AI03</button>
+          <button data-ai-tool="AI05" data-target="t72-qc-report">AI05</button>
+        </div>
+      </div>
+
+
+      <div class="panel" data-knowledge-panel>
+        <h2>知识库</h2>
+        <p>当前步骤与任务对应的知识点与关键说明。</p>
+        <div data-knowledge-content></div>
+      </div>
+
+      <div class="panel">
+        <h2>AI 使用日志</h2>
+        <div class="log-box" data-ai-log></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Step 7 / 9 - 审校机制保证翻译质量与格式一致。
+  </footer>
+
+  <script src="knowledge-base.js"></script>
+  <script src="step-config.js"></script>
+  <script src="case-studies.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+{
+  "started_at": "2026-02-15 10:24:24",
+  "base_url": "http://127.0.0.1:3000",
+  "user": {
+    "email": "jingjixue"
+  },
+  "steps": [
+    {
+      "step": "s1",
+      "filled_sections": [
+        "t1.1",
+        "t1.2"
+      ],
+      "ai_tools": [
+        {
+          "button": "AI01 选题适配性分析",
+          "clicked": true
+        }
+      ],
+      "reviews": [
+        {
+          "section": "t1.1",
+          "triggered": true,
+          "has_result": false,
+          "result_preview": "AI 正在批改您的作业，请稍候..."
+        }
+      ],
+      "saves": [
+        {
+          "section": "t1.1",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t1.2",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t1.1",
+          "phase": "after_review",
+          "clicked": true
+        }
+      ]
+    },
+    {
+      "step": "s2",
+      "filled_sections": [
+        "t2.1",
+        "t2.2"
+      ],
+      "ai_tools": [
+        {
+          "button": "AI01 选题适配性分析",
+          "clicked": true
+        }
+      ],
+      "reviews": [
+        {
+          "section": "t2.1",
+          "triggered": true,
+          "has_result": false,
+          "result_preview": "AI 正在批改您的作业，请稍候..."
+        }
+      ],
+      "saves": [
+        {
+          "section": "t2.1",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t2.2",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t2.1",
+          "phase": "after_review",
+          "clicked": true
+        }
+      ]
+    },
+    {
+      "step": "s3",
+      "filled_sections": [
+        "t3.1",
+        "t3.2"
+      ],
+      "ai_tools": [
+        {
+          "button": "AI02 版权沟通邮件草稿",
+          "clicked": true
+        }
+      ],
+      "reviews": [
+        {
+          "section": "t3.1",
+          "triggered": true,
+          "has_result": false,
+          "result_preview": "AI 正在批改您的作业，请稍候..."
+        }
+      ],
+      "saves": [
+        {
+          "section": "t3.1",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t3.2",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t3.1",
+          "phase": "after_review",
+          "clicked": true
+        }
+      ]
+    },
+    {
+      "step": "s4",
+      "filled_sections": [
+        "t4.1",
+        "t4.2"
+      ],
+      "ai_tools": [
+        {
+          "button": "AI02 版权沟通邮件草稿",
+          "clicked": true
+        }
+      ],
+      "reviews": [
+        {
+          "section": "t4.1",
+          "triggered": true,
+          "has_result": false,
+          "result_preview": "AI 正在批改您的作业，请稍候..."
+        }
+      ],
+      "saves": [
+        {
+          "section": "t4.1",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t4.2",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t4.1",
+          "phase": "after_review",
+          "clicked": true
+        }
+      ]
+    },
+    {
+      "step": "s5",
+      "filled_sections": [
+        "t5.1",
+        "t5.2"
+      ],
+      "ai_tools": [
+        {
+          "button": "AI01 选题适配性分析",
+          "clicked": true
+        }
+      ],
+      "reviews": [
+        {
+          "section": "t5.1",
+          "triggered": true,
+          "has_result": false,
+          "result_preview": "AI 正在批改您的作业，请稍候..."
+        }
+      ],
+      "saves": [
+        {
+          "section": "t5.1",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t5.2",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t5.1",
+          "phase": "after_review",
+          "clicked": true
+        }
+      ]
+    },
+    {
+      "step": "s6",
+      "filled_sections": [
+        "t6.1",
+        "t6.2"
+      ],
+      "ai_tools": [
+        {
+          "button": "AI04 术语与风格规范",
+          "clicked": true
+        }
+      ],
+      "reviews": [
+        {
+          "section": "t6.1",
+          "triggered": true,
+          "has_result": false,
+          "result_preview": "AI 正在批改您的作业，请稍候..."
+        }
+      ],
+      "saves": [
+        {
+          "section": "t6.1",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t6.2",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t6.1",
+          "phase": "after_review",
+          "clicked": true
+        }
+      ]
+    },
+    {
+      "step": "s7",
+      "filled_sections": [
+        "t7.1",
+        "t7.2"
+      ],
+      "ai_tools": [
+        {
+          "button": "AI03 双语样章翻译",
+          "clicked": true
+        }
+      ],
+      "reviews": [
+        {
+          "section": "t7.1",
+          "triggered": true,
+          "has_result": false,
+          "result_preview": "AI 正在批改您的作业，请稍候..."
+        }
+      ],
+      "saves": [
+        {
+          "section": "t7.1",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t7.2",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t7.1",
+          "phase": "after_review",
+          "clicked": true
+        }
+      ]
+    },
+    {
+      "step": "s8",
+      "filled_sections": [
+        "t8.1",
+        "t8.2"
+      ],
+      "ai_tools": [
+        {
+          "button": "AI04 术语与风格规范",
+          "clicked": true
+        }
+      ],
+      "reviews": [
+        {
+          "section": "t8.1",
+          "triggered": true,
+          "has_result": false,
+          "result_preview": "AI 正在批改您的作业，请稍候..."
+        }
+      ],
+      "saves": [
+        {
+          "section": "t8.1",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t8.2",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t8.1",
+          "phase": "after_review",
+          "clicked": true
+        }
+      ]
+    },
+    {
+      "step": "s9",
+      "filled_sections": [
+        "t9.1",
+        "t9.2"
+      ],
+      "ai_tools": [
+        {
+          "button": "AI04 术语与风格规范",
+          "clicked": true
+        }
+      ],
+      "reviews": [
+        {
+          "section": "t9.1",
+          "triggered": true,
+          "has_result": false,
+          "result_preview": "AI 正在批改您的作业，请稍候..."
+        }
+      ],
+      "saves": [
+        {
+          "section": "t9.1",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t9.2",
+          "phase": "initial",
+          "clicked": true
+        },
+        {
+          "section": "t9.1",
+          "phase": "after_review",
+          "clicked": true
+        }
+      ]
+    }
+  ],
+  "login": {
+    "register_error": "Email already exists",
+    "status": "ok"
+  },
+  "finished_at": "2026-02-15T10:27:49.576742"
+}

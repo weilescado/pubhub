@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S4 术语表建立 - 高校国际出版流程模拟实训平台</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page" data-step="s4">
+  <header class="topbar">
+    <div class="brand">
+      <small>Step 04</small>
+      <strong>术语表建立</strong>
+    </div>
+    <nav>
+      <a class="nav-link" href="index.html">概览</a>
+      <a class="nav-link" href="s3.html">上一步 ← S3 样章翻译</a>
+      <a class="nav-link" href="s5.html">下一步 → S5 整体翻译计划制定</a>
+    </nav>
+  </header>
+
+  <main class="layout fade-in">
+    <aside class="panel">
+      <h2>任务目标</h2>
+      <p>术语库（大于50个）→风格表固化。</p>
+      <ul>
+        <li>术语库建设（≥50条确认）</li>
+        <li>风格表固化（含示例库）</li>
+        <li>形成可复用的项目标准</li>
+      </ul>
+    </aside>
+
+    <section class="workspace">
+      <div class="panel" data-section="t4.1">
+        <h2>T4.1 术语表/术语库建设（≥50条确认）</h2>
+        <p>建立可追溯术语体系，至少确认50条关键术语，支持全书一致性与审校。</p>
+        <div class="field">
+          <label>术语表 v1 (≥50条Approved)</label>
+          <div style="margin-bottom: 12px; display: flex; gap: 10px; align-items: center;">
+            <button class="button ghost small" data-download-template>下载 Excel 模板</button>
+            <div style="position: relative; overflow: hidden; display: inline-block;">
+               <button class="button ghost small">上传 Excel 表格</button>
+               <input type="file" data-upload-excel accept=".xlsx, .xls" style="position: absolute; left: 0; top: 0; opacity: 0; cursor: pointer; height: 100%; width: 100%;" />
+            </div>
+            <small style="color: #666;">支持 .xlsx 格式，上传后将自动填充下方表格。</small>
+          </div>
+          
+          <div style="overflow-x: auto; max-height: 400px; border: 1px solid var(--line);">
+            <table style="width: 100%; border-collapse: collapse; margin-top: 0;">
+              <thead style="position: sticky; top: 0; background: #f9f9f9; z-index: 1;">
+                <tr>
+                  <th style="width: 60px; text-align: center; padding: 8px; border: 1px solid var(--line);">序号</th>
+                  <th style="text-align: left; padding: 8px; border: 1px solid var(--line);">英文术语 (English)</th>
+                  <th style="text-align: left; padding: 8px; border: 1px solid var(--line);">中文术语 (Chinese)</th>
+                </tr>
+              </thead>
+              <tbody id="t41-term-table-body">
+              </tbody>
+              <script>
+                (function () {
+                  var body = document.getElementById("t41-term-table-body");
+                  for (var i = 1; i <= 50; i++) {
+                    var tr = document.createElement("tr");
+                    tr.innerHTML = 
+                      '<td style="text-align: center; padding: 8px; border: 1px solid var(--line);">' + i + '</td>' +
+                      '<td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_v1_en_' + i + '" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>' +
+                      '<td style="padding: 8px; border: 1px solid var(--line);"><input type="text" data-field="term_v1_cn_' + i + '" style="width: 100%; border: 1px solid #eee; padding: 4px;" /></td>';
+                    body.appendChild(tr);
+                  }
+                })();
+              </script>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="field">
+          <label>术语决策说明（争议项）</label>
+          <textarea id="t41-term-list" data-field="term_decisions" placeholder="记录争议术语的决策理由..."></textarea>
+        </div>
+        <div class="field">
+          <label>上传术语库导出 (TBX/CSV)</label>
+          <input type="file" data-file />
+          <small data-file-meta>未选择文件</small>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button" data-save>保存草稿</button>
+          <button class="button secondary" data-export>导出材料包</button>
+        </div>
+      </div>
+
+      <div class="panel" data-section="t4.2">
+        <h2>T4.2 风格表 (Style Sheet) 固化（含示例库）</h2>
+        <p>固化英文译稿风格规范并给出示例，形成可复用项目标准。</p>
+        <div class="field">
+          <label>风格表 v1</label>
+          <textarea id="t42-style-sheet" data-field="style_sheet" placeholder="拼写、标点、数字、引文等规则..."></textarea>
+        </div>
+        <div class="field">
+          <label>风格表-术语表联动说明</label>
+          <textarea data-field="style_term_link" placeholder="说明关键术语的格式规则..."></textarea>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button" data-save>保存草稿</button>
+          <button class="button secondary" data-export>导出材料包</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>T4.1 AI 工具</h2>
+        <p>术语抽取与候选译法建议；人工确认后方可入库。</p>
+        <div class="ai-tools">
+          <button data-ai-tool="AI02" data-target="t41-term-list">AI02</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>T4.2 AI 工具</h2>
+        <p>将出版社常见格式要求转化为风格表检查项。</p>
+        <div class="ai-tools">
+          <button data-ai-tool="AI01" data-target="t42-style-sheet">AI01</button>
+        </div>
+      </div>
+
+
+      <div class="panel" data-knowledge-panel>
+        <h2>知识库</h2>
+        <p>当前步骤与任务对应的知识点与关键说明。</p>
+        <div data-knowledge-content></div>
+      </div>
+
+      <div class="panel">
+        <h2>AI 使用日志</h2>
+        <div class="log-box" data-ai-log></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Step 4 / 9 - 规范文档是多角色协同翻译的基础。
+  </footer>
+
+  <script src="knowledge-base.js"></script>
+  <script src="vendor-xlsx.min.js"></script>
+  <script src="step-config.js"></script>
+  <script src="case-studies.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S6 语言润色 - 高校国际出版流程模拟实训平台</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page" data-step="s6">
+  <header class="topbar">
+    <div class="brand">
+      <small>Step 06</small>
+      <strong>语言润色</strong>
+    </div>
+    <nav>
+      <a class="nav-link" href="index.html">概览</a>
+      <a class="nav-link" href="s5.html">上一步 ← S5 整体翻译计划制定</a>
+      <a class="nav-link" href="s7.html">下一步 → S7 审校机制设计</a>
+    </nav>
+  </header>
+
+  <main class="layout fade-in">
+    <aside class="panel">
+      <h2>任务目标</h2>
+      <p>语言润色（copyediting）、AI合规披露（如适用）。</p>
+      <ul>
+        <li>语言润色与风格统一</li>
+        <li>AI合规检查与披露文本</li>
+        <li>形成可追溯修订记录</li>
+      </ul>
+    </aside>
+
+    <section class="workspace">
+      <div class="panel" data-section="t6.1">
+        <h2>T6.1 语言润色（copyediting）与风格统一（v1.0）</h2>
+        <p>提升英文译稿自然度与连贯性，在不改变原意前提下达到可提交质量。</p>
+        <div class="field">
+          <label>润色后译文 v2 (对比模式)</label>
+          <textarea id="t61-polished-v2" data-deliverable placeholder="输入润色后的译文，建议标记修改处..."></textarea>
+        </div>
+        <div class="field">
+          <label>润色记录表</label>
+          <textarea data-field="polishing_log" placeholder="记录主要修改类型（语法/词汇/逻辑/风格）..."></textarea>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button" data-save>保存草稿</button>
+          <button class="button secondary" data-export>导出材料包</button>
+        </div>
+      </div>
+
+      <div class="panel" data-section="t6.2">
+        <h2>T6.2 AI合规检查+披露文本（如适用）</h2>
+        <p>确保AI使用符合出版伦理、保密与政策要求，并生成披露文本与审计记录。</p>
+        <div class="field">
+          <label>AI合规检查报告（风险+整改）</label>
+          <textarea data-field="expert_feedback" placeholder="记录风险项、整改措施与处理结果..."></textarea>
+        </div>
+        <div class="field">
+          <label>AI披露文本（可粘贴到译者声明/致谢）</label>
+          <textarea id="t62-final-v3" data-deliverable placeholder="生成AI使用披露段落（如适用）..."></textarea>
+        </div>
+        <div class="field">
+          <label>工具日志摘要</label>
+          <textarea data-field="polishing_report" placeholder="概述AI工具用途、输入范围与人工复核方式..."></textarea>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button" data-save>保存草稿</button>
+          <button class="button secondary" data-export>导出材料包</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>AI 辅助工具</h2>
+        <p>语言润色建议与合规检查。</p>
+        <div class="ai-tools">
+          <button data-ai-tool="AI04" data-target="t61-polished-v2">AI04</button>
+          <button data-ai-tool="AI05" data-target="t62-final-v3">AI05</button>
+          <button data-ai-tool="AI01" data-target="t62-final-v3">AI01</button>
+        </div>
+      </div>
+
+
+      <div class="panel" data-knowledge-panel>
+        <h2>知识库</h2>
+        <p>当前步骤与任务对应的知识点与关键说明。</p>
+        <div data-knowledge-content></div>
+      </div>
+
+      <div class="panel">
+        <h2>AI 使用日志</h2>
+        <div class="log-box" data-ai-log></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Step 6 / 9 - 语言润色使稿件更符合国际出版审稿标准。
+  </footer>
+
+  <script src="knowledge-base.js"></script>
+  <script src="step-config.js"></script>
+  <script src="case-studies.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

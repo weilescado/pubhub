@@ -1,0 +1,22 @@
+{
+  "aiLog": [],
+  "fileMeta": "",
+  "sections": {
+    "t6.1": {
+      "fields": {
+        "polishing_log": "统一术语、拆分长句、增强段间连接。"
+      },
+      "fileMeta": "",
+      "text": "v1.0润色稿完成。"
+    },
+    "t6.2": {
+      "fields": {
+        "expert_feedback": "高风险项已关闭，无外发敏感内容。",
+        "polishing_report": "记录AI用途、输入边界、人工复核比例100%。"
+      },
+      "fileMeta": "",
+      "text": "AI披露文本已生成。"
+    }
+  },
+  "text": ""
+}

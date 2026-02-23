@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S9 模拟投稿 - 高校国际出版流程模拟实训平台</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page" data-step="s9">
+  <header class="topbar">
+    <div class="brand">
+      <small>Step 09</small>
+      <strong>模拟投稿</strong>
+    </div>
+    <nav>
+      <a class="nav-link" href="index.html">概览</a>
+      <a class="nav-link" href="s8.html">上一步 ← S8 投稿材料准备</a>
+      <a class="nav-link" href="index.html">下一步 → 返回首页</a>
+    </nav>
+  </header>
+
+  <main class="layout fade-in">
+    <aside class="panel">
+      <h2>任务目标</h2>
+      <p>模拟提交→反馈闭环+复盘入库。</p>
+      <ul>
+        <li>模拟提交与提交记录</li>
+        <li>反馈回应与修订/改投</li>
+        <li>复盘沉淀与资产入库</li>
+      </ul>
+    </aside>
+
+    <section class="workspace">
+      <div class="panel" data-section="t9.1">
+        <h2>T9.1 模拟投稿提交+提交记录（元数据）</h2>
+        <p>按真实出版社投稿逻辑完成模拟提交，并生成可审计提交记录与版本元数据。</p>
+        <div class="field">
+          <label>模拟提交记录（含元数据）</label>
+          <textarea id="t91-metadata" data-deliverable placeholder="记录对象、时间、投稿系统/邮件、元数据与提交路径..."></textarea>
+        </div>
+        <div class="field">
+          <label>提交材料版本号/清单</label>
+          <textarea data-field="upload_checklist" placeholder="列出提交附件、版本号与可选hash..."></textarea>
+        </div>
+        <div class="field">
+          <label>投递策略说明</label>
+          <textarea data-field="submission_confirmation" placeholder="说明投递理由、对应系列/学科与编辑匹配依据..."></textarea>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button" data-save>保存草稿</button>
+          <button class="button secondary" data-export>导出材料包</button>
+        </div>
+      </div>
+
+      <div class="panel" data-section="t9.2">
+        <h2>T9.2 编辑反馈演练（修改/拒稿/跟进）+修订/改投+复盘入库</h2>
+        <p>体验反馈闭环：撰写回应、修订材料或改投，并完成复盘与资产入库。</p>
+        <div class="field">
+          <label>回应邮件（英文）</label>
+          <textarea data-field="review_comments_summary" placeholder="针对反馈情景撰写回应邮件（接受/修改/拒稿/跟进）..."></textarea>
+        </div>
+        <div class="field">
+          <label>修订版材料或改投策略</label>
+          <textarea id="t92-rebuttal" data-deliverable placeholder="说明修订范围、改投目标或新版本变化..."></textarea>
+        </div>
+        <div class="field">
+          <label>复盘报告与资产入库清单</label>
+          <textarea data-field="archive_note" placeholder="总结关键决策、质量与合规、时间成本；列出入库资产与数据导出包..."></textarea>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button" data-save>保存草稿</button>
+          <button class="button secondary" data-export>导出材料包</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>AI 辅助工具</h2>
+        <p>辅助回应邮件与修改清单生成，检查入库资产敏感内容。</p>
+        <div class="ai-tools">
+          <button data-ai-tool="AI04" data-target="t92-rebuttal">AI04</button>
+          <button data-ai-tool="AI01" data-target="t91-metadata">AI01</button>
+          <button data-ai-tool="AI05" data-target="t92-rebuttal">AI05</button>
+        </div>
+      </div>
+
+
+      <div class="panel" data-knowledge-panel>
+        <h2>知识库</h2>
+        <p>当前步骤与任务对应的知识点与关键说明。</p>
+        <div data-knowledge-content></div>
+      </div>
+
+      <div class="panel">
+        <h2>AI 使用日志</h2>
+        <div class="log-box" data-ai-log></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Step 9 / 9 - 模拟投稿结束后可导出完整材料包进行考核。
+  </footer>
+
+  <script src="knowledge-base.js"></script>
+  <script src="step-config.js"></script>
+  <script src="case-studies.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

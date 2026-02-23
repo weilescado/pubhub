@@ -1,0 +1,63 @@
+{
+  "aiLog": [
+    {
+      "input": "sample_scope: 第2章1-3节，约6200字。\ntranslation_brief: 面向研究生与政策分析读者，保持学术清晰表达。\nterm_en_1: fiscal decentralization\nterm_cn_1: 财政分权",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e69a30>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.899802",
+      "tool": "AI02"
+    },
+    {
+      "input": "sample_scope: 第2章1-3节，约6200字。\ntranslation_brief: 面向研究生与政策分析读者，保持学术清晰表达。\n\n[AI建议]\n[离线回退建议] 建议明确权限范围、地域、期限和联系人。（原上下文长度: 122）\nterm_en_1: fiscal decentralization\nterm_cn_1: 财政分权",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e4deb0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.901187",
+      "tool": "AI03"
+    },
+    {
+      "input": "sample_scope: 第2章1-3节，约6200字。\ntranslation_brief: 面向研究生与政策分析读者，保持学术清晰表达。\n\n[AI建议]\n[离线回退建议] 建议明确权限范围、地域、期限和联系人。（原上下文长度: 122）\n\n[AI建议]\n[离线回退建议] 建议核查漏译、术语一致性和句子对应关系。（原上下文长度: 172）\nterm_en_1: fiscal decentralization\nterm_cn_1: 财政分权",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e4d5b0>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.902350",
+      "tool": "AI04"
+    },
+    {
+      "input": "样章v1完成。\nreview_comments: 术语一致性与句式流畅度需改善。\nsample_translation_v2: Revised sample translation draft.\nresponse_log: 已逐条回应评审意见。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e69550>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.904341",
+      "tool": "AI02"
+    },
+    {
+      "input": "样章v1完成。\nreview_comments: 术语一致性与句式流畅度需改善。\nsample_translation_v2: Revised sample translation draft.\n\n[AI建议]\n[离线回退建议] 建议明确权限范围、地域、期限和联系人。（原上下文长度: 122）\nresponse_log: 已逐条回应评审意见。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107df3830>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.905587",
+      "tool": "AI03"
+    },
+    {
+      "input": "样章v1完成。\nreview_comments: 术语一致性与句式流畅度需改善。\nsample_translation_v2: Revised sample translation draft.\n\n[AI建议]\n[离线回退建议] 建议明确权限范围、地域、期限和联系人。（原上下文长度: 122）\n\n[AI建议]\n[离线回退建议] 建议核查漏译、术语一致性和句子对应关系。（原上下文长度: 172）\nresponse_log: 已逐条回应评审意见。",
+      "output": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e4ca70>: Failed to resolve 'api.deepseek.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "timestamp": "2026-02-15T09:58:12.906578",
+      "tool": "AI04"
+    }
+  ],
+  "fileMeta": "",
+  "sections": {
+    "t3.1": {
+      "fields": {
+        "sample_scope": "第2章1-3节，约6200字。\n[修订] 已根据AI点评补充可执行细节。",
+        "term_cn_1": "财政分权",
+        "term_en_1": "fiscal decentralization",
+        "translation_brief": "面向研究生与政策分析读者，保持学术清晰表达。\n\n[AI建议]\n[离线回退建议] 建议明确权限范围、地域、期限和联系人。（原上下文长度: 122）\n\n[AI建议]\n[离线回退建议] 建议核查漏译、术语一致性和句子对应关系。（原上下文长度: 172）\n\n[AI建议]\n[离线回退建议] 建议统一关键术语译法并注明首次定义。（原上下文长度: 223）"
+      },
+      "fileMeta": "",
+      "text": "根据AI导师点评已执行修订：补充证据链、明确行动项、统一术语与结构。"
+    },
+    "t3.2": {
+      "fields": {
+        "response_log": "已逐条回应评审意见。",
+        "review_comments": "术语一致性与句式流畅度需改善。\n[修订] 已根据AI点评补充可执行细节。",
+        "sample_translation_v2": "Revised sample translation draft.\n\n[AI建议]\n[离线回退建议] 建议明确权限范围、地域、期限和联系人。（原上下文长度: 122）\n\n[AI建议]\n[离线回退建议] 建议核查漏译、术语一致性和句子对应关系。（原上下文长度: 172）\n\n[AI建议]\n[离线回退建议] 建议统一关键术语译法并注明首次定义。（原上下文长度: 223）"
+      },
+      "fileMeta": "",
+      "text": "样章v1完成。\n根据AI导师点评已执行修订：补充证据链、明确行动项、统一术语与结构。"
+    }
+  },
+  "text": ""
+}

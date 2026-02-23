@@ -1,0 +1,22 @@
+{
+  "aiLog": [],
+  "fileMeta": "",
+  "sections": {
+    "t6.1": {
+      "fields": {
+        "polishing_log": "语体统一、长句拆分。"
+      },
+      "fileMeta": "",
+      "text": "v1.0润色完成"
+    },
+    "t6.2": {
+      "fields": {
+        "expert_feedback": "高风险项已关闭",
+        "polishing_report": "AI日志与复核记录完整"
+      },
+      "fileMeta": "",
+      "text": "披露文本完成"
+    }
+  },
+  "text": ""
+}

@@ -1,0 +1,29 @@
+{
+  "aiLog": [],
+  "fileMeta": "",
+  "sections": {
+    "t2.1": {
+      "fields": {
+        "rights_availability_result": "不明确需追踪",
+        "rights_chain_agent_1": "待确认",
+        "rights_chain_author_1": "兰小欢",
+        "rights_chain_publisher_1": "上海人民出版社",
+        "rights_chain_report": "已建立作者-出版社-代理三层权利链，完成公开信息与版权页证据归档。",
+        "rights_chain_status_1": "译权状态需邮件确认"
+      },
+      "fileMeta": "未选择文件",
+      "text": ""
+    },
+    "t2.2": {
+      "fields": {
+        "communication_log": "2026-02-15 首轮发送；等待5个工作日后跟进。",
+        "license_request_letter": "Dear Permission Officer, we request non-exclusive reuse permission for ...",
+        "rights_inquiry_email": "Subject: Rights Inquiry for English Translation\nDear Rights Team, ...",
+        "third_party_assets": "图表2项（申请许可）；照片1项（替换）；长引文2项（删减）。"
+      },
+      "fileMeta": "未选择文件",
+      "text": ""
+    }
+  },
+  "text": ""
+}

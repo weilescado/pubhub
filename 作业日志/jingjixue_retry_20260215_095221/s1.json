@@ -1,0 +1,36 @@
+{
+  "aiLog": [],
+  "fileMeta": "",
+  "sections": {
+    "t1.1": {
+      "fields": {
+        "candidate_book_1": "《置身事内：中国政府与经济发展》（兰小欢）",
+        "candidate_book_2": "《变量：中国社会运行的逻辑》（何帆）",
+        "candidate_book_3": "《激荡三十年：中国企业1978-2008》（吴晓波）",
+        "comp_book_1": "How China Escaped the Poverty Trap",
+        "comp_book_2": "China's Great Wall of Debt",
+        "comp_book_3": "The Great Rebalancing",
+        "comp_book_4": "China's Economy: What Everyone Needs to Know",
+        "comp_book_5": "The Rise of China and the Demise of the Capitalist World-Economy",
+        "diff_value": "1) 制度解释强。\n2) 案例丰富。\n3) 适合国际课程。",
+        "persona_keywords": "graduate student / policy analyst",
+        "positioning_statement": "This book provides an institution-based explanation of China's growth with policy-ready cases for global readers."
+      },
+      "fileMeta": "未选择文件",
+      "text": ""
+    },
+    "t1.2": {
+      "fields": {
+        "objective_achievable": "2人协作",
+        "objective_measurable": "9周9里程碑",
+        "objective_relevant": "对接国际出版",
+        "objective_specific": "完成样章与提案",
+        "objective_timebound": "课程期内",
+        "project_name": "Chinese Economics Translation Pilot"
+      },
+      "fileMeta": "",
+      "text": "项目章程完成。"
+    }
+  },
+  "text": ""
+}

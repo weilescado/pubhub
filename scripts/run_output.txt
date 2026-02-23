@@ -1,0 +1,57 @@
+注册测试账号: test+1767505045@example.com
+/register => 200 {
+  "message": "Registration successful",
+  "userId": "ecc6f69e-5361-4f29-9cd0-980545a546d6"
+}
+
+/login => 200 {
+  "message": "Login successful",
+  "user": {
+    "email": "test+1767505045@example.com",
+    "id": "ecc6f69e-5361-4f29-9cd0-980545a546d6",
+    "isAdmin": false
+  }
+}
+
+已登录，userId: ecc6f69e-5361-4f29-9cd0-980545a546d6
+保存 s1 => 200 {
+  "message": "Saved"
+}
+
+保存 s2 => 200 {
+  "message": "Saved"
+}
+
+保存 s3 => 200 {
+  "message": "Saved"
+}
+
+保存 s4 => 200 {
+  "message": "Saved"
+}
+
+保存 s5 => 200 {
+  "message": "Saved"
+}
+
+保存 s6 => 200 {
+  "message": "Saved"
+}
+
+保存 s7 => 200 {
+  "message": "Saved"
+}
+
+保存 s8 => 200 {
+  "message": "Saved"
+}
+
+保存 s9 => 200 {
+  "message": "Saved"
+}
+
+/admin/user_detail => 200
+{'progress': [{'data': {'completed': True, 'completed_at': '2026-01-04T13:37:25', 'notes': '自动化测试：已完成 s1', 'tasks': [{'id': 's1-t1', 'status': 'done'}, {'id': 's1-t2', 'status': 'done'}]}, 'step_id': 's1', 'updated_at': '2026-01-04T13:37:25.116321', 'user_id': 'ecc6f69e-5361-4f29-9cd0-980545a546d6'}, {'data': {'completed': True, 'completed_at': '2026-01-04T13:37:25', 'notes': '自动化测试：已完成 s2', 'tasks': [{'id': 's2-t1', 'status': 'done'}, {'id': 's2-t2', 'status': 'done'}]}, 'step_id': 's2', 'updated_at': '2026-01-04T13:37:25.325374', 'user_id': 'ecc6f69e-5361-4f29-9cd0-980545a546d6'}, {'data': {'completed': True, 'completed_at': '2026-01-04T13:37:25', 'notes': '自动化测试：已完成 s3', 'tasks': [{'id': 's3-t1', 'status': 'done'}, {'id': 's3-t2', 'status': 'done'}]}, 'step_id': 's3', 'updated_at': '2026-01-04T13:37:25.532880', 'user_id': 'ecc6f69e-5361-4f29-9cd0-980545a546d6'}, {'data': {'completed': True, 'completed_at': '2026-01-04T13:37:25', 'notes': '自动化测试：已完成 s4', 'tasks': [{'id': 's4-t1', 'status': 'done'}, {'id': 's4-t2', 'status': 'done'}]}, 'step_id': 's4', 'updated_at': '2026-01-04T13:37:25.776360', 'user_id': 'ecc6f69e-5361-4f29-9cd0-980545a546d6'}, {'data': {'completed': True, 'completed_at': '2026-01-04T13:37:25', 'notes': '自动化测试：已完成 s5', 'tasks': [{'id': 's5-t1', 'status': 'done'}, {'id': 's5-t2', 'status': 'done'}]}, 'step_id': 's5', 'updated_at': '2026-01-04T13:37:25.986637', 'user_id': 'ecc6f69e-5361-4f29-9cd0-980545a546d6'}, {'data': {'completed': True, 'completed_at': '2026-01-04T13:37:26', 'notes': '自动化测试：已完成 s6', 'tasks': [{'id': 's6-t1', 'status': 'done'}, {'id': 's6-t2', 'status': 'done'}]}, 'step_id': 's6', 'updated_at': '2026-01-04T13:37:26.199895', 'user_id': 'ecc6f69e-5361-4f29-9cd0-980545a546d6'}, {'data': {'completed': True, 'completed_at': '2026-01-04T13:37:26', 'notes': '自动化测试：已完成 s7', 'tasks': [{'id': 's7-t1', 'status': 'done'}, {'id': 's7-t2', 'status': 'done'}]}, 'step_id': 's7', 'updated_at': '2026-01-04T13:37:26.417385', 'user_id': 'ecc6f69e-5361-4f29-9cd0-980545a546d6'}, {'data': {'completed': True, 'completed_at': '2026-01-04T13:37:26', 'notes': '自动化测试：已完成 s8', 'tasks': [{'id': 's8-t1', 'status': 'done'}, {'id': 's8-t2', 'status': 'done'}]}, 'step_id': 's8', 'updated_at': '2026-01-04T13:37:26.627599', 'user_id': 'ecc6f69e-5361-4f29-9cd0-980545a546d6'}, {'data': {'completed': True, 'completed_at': '2026-01-04T13:37:26', 'notes': '自动化测试：已完成 s9', 'tasks': [{'id': 's9-t1', 'status': 'done'}, {'id': 's9-t2', 'status': 'done'}]}, 'step_id': 's9', 'updated_at': '2026-01-04T13:37:26.838664', 'user_id': 'ecc6f69e-5361-4f29-9cd0-980545a546d6'}], 'reviews': []}
+/admin/stats => 200
+[{'created_at': '2026-01-04T13:37:25.111177', 'email': 'test+1767505045@example.com', 'id': 'ecc6f69e-5361-4f29-9cd0-980545a546d6', 'latest_step': 's9', 'progress_steps': 9, 'reviews_count': 0}, {'created_at': '2026-01-04T13:12:44.910514', 'email': 'testuser@example.com', 'id': '04277ff9-8401-43cb-bb8a-277417164a2b', 'latest_step': '', 'progress_steps': 0, 'reviews_count': 0}, {'created_at': '2025-12-25T08:02:01.291339', 'email': '78341062@qq.com', 'id': '74fb0706-ca23-4e81-b769-5ce645b5c5a2', 'latest_step': 's1', 'progress_steps': 1, 'reviews_count': 3}]
+脚本执行完毕
