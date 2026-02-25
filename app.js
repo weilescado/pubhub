@@ -937,7 +937,67 @@ window.addEventListener("DOMContentLoaded", async () => {
   renderKnowledgeBoard();
   initTutorial();
   highlightNav();
+  checkTeacherFeedback();
 });
+
+// --- Teacher Feedback ---
+const checkTeacherFeedback = async () => {
+  if (!currentUser) return;
+  try {
+    // We reuse the load_progress API to check for 'feedback' step
+    const data = await apiCall(`/load_progress?userId=${currentUser.id}&stepId=feedback`);
+    if (data && data.text) {
+      showTeacherFeedbackNotification(data.text);
+    }
+  } catch (e) {
+    // ignore error if no feedback found
+  }
+};
+
+const showTeacherFeedbackNotification = (text) => {
+  if (document.querySelector('.feedback-toast')) return;
+  
+  const toast = document.createElement('div');
+  toast.className = 'feedback-toast';
+  toast.style.cssText = `
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border-left: 4px solid #0052cc;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 16px;
+    border-radius: 4px;
+    z-index: 9999;
+    max-width: 320px;
+    animation: slideIn 0.3s ease-out;
+  `;
+  
+  toast.innerHTML = `
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+      <strong style="color:#0052cc">👨‍🏫 老师的新反馈</strong>
+      <button style="border:none; background:none; cursor:pointer; font-size:16px;" onclick="this.parentElement.parentElement.remove()">&times;</button>
+    </div>
+    <div style="font-size:14px; line-height:1.5; color:#333; max-height:200px; overflow-y:auto;">
+      ${text.replace(/\n/g, '<br>')}
+    </div>
+  `;
+  
+  document.body.appendChild(toast);
+  
+  // Add animation style if not exists
+  if (!document.getElementById('toast-style')) {
+    const style = document.createElement('style');
+    style.id = 'toast-style';
+    style.textContent = `
+      @keyframes slideIn {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+};
 
 // --- UI Components (Knowledge Panel & Tutorial) ---
 
