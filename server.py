@@ -5,12 +5,43 @@ import hashlib
 import uuid
 import datetime
 import requests
+import logging
 from flask import Flask, request, jsonify, session
 from flask_cors import CORS
 from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Setup requests session with connection pooling and retry strategy
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
+def create_session_with_retries():
+    """Create a requests session with automatic retry and connection pooling"""
+    sess = requests.Session()
+    
+    # Retry strategy: retry on connection errors, timeouts, and 5xx errors
+    retry_strategy = Retry(
+        total=3,  # Max retries
+        backoff_factor=1,  # 1s, 2s, 4s between retries
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=["POST"]  # Only retry POST if idempotent
+    )
+    
+    # Mount adapter with retry strategy for both http and https
+    adapter = HTTPAdapter(max_retries=retry_strategy, pool_connections=10, pool_maxsize=10)
+    sess.mount("http://", adapter)
+    sess.mount("https://", adapter)
+    
+    return sess
+
+# Create global session
+API_SESSION = create_session_with_retries()
 
 app = Flask(__name__, static_folder='.', static_url_path='')
 app.secret_key = os.getenv("SECRET_KEY", "dev-secret-key")  # Change in production
@@ -310,10 +341,19 @@ def ai_completion():
             "Content-Type": "application/json",
             "Authorization": f"Bearer {DEEPSEEK_API_KEY}"
         }
-        response = requests.post(API_URL, json=payload, headers=headers, timeout=30)
+        logger.info(f"Calling DeepSeek API for tool: {tool_id}")
+        response = API_SESSION.post(API_URL, json=payload, headers=headers, timeout=60)
         response.raise_for_status()
+        logger.info(f"DeepSeek API call successful for tool: {tool_id}")
         return jsonify({"result": response.json()['choices'][0]['message']['content']})
+    except requests.exceptions.Timeout as e:
+        logger.error(f"DeepSeek API timeout: {str(e)}")
+        return jsonify({"error": f"API request timed out after 60 seconds: {str(e)}"}), 504
+    except requests.exceptions.ConnectionError as e:
+        logger.error(f"DeepSeek API connection error: {str(e)}")
+        return jsonify({"error": f"Connection error with DeepSeek API: {str(e)}"}), 503
     except Exception as e:
+        logger.error(f"DeepSeek API error: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
 @app.route('/api/ai-review', methods=['POST'])
@@ -340,9 +380,11 @@ def ai_review():
             "Content-Type": "application/json",
             "Authorization": f"Bearer {DEEPSEEK_API_KEY}"
         }
-        response = requests.post(API_URL, json=payload, headers=headers, timeout=30)
+        logger.info(f"Calling DeepSeek API for review on step: {step_id}")
+        response = API_SESSION.post(API_URL, json=payload, headers=headers, timeout=60)
         response.raise_for_status()
         result = response.json()['choices'][0]['message']['content']
+        logger.info(f"DeepSeek API call successful for review on step: {step_id}")
         
         # Save review to DB; if this fails, still return the review result.
         if user_id:
@@ -362,8 +404,14 @@ def ai_review():
             
         return jsonify({"result": result})
         
+    except requests.exceptions.Timeout as e:
+        logger.error(f"DeepSeek API timeout during review: {str(e)}")
+        return jsonify({"error": f"API request timed out after 60 seconds: {str(e)}"}), 504
+    except requests.exceptions.ConnectionError as e:
+        logger.error(f"DeepSeek API connection error during review: {str(e)}")
+        return jsonify({"error": f"Connection error with DeepSeek API: {str(e)}"}), 503
     except Exception as e:
-        print(e)
+        logger.error(f"DeepSeek API error during review: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
 
@@ -409,10 +457,12 @@ def submit_assessment():
                         "temperature": 0
                     }
                     headers = {"Content-Type": "application/json", "Authorization": f"Bearer {DEEPSEEK_API_KEY}"}
-                    resp = requests.post(API_URL, json=payload, headers=headers, timeout=15)
+                    logger.info(f"Calling DeepSeek API for AI scoring on KP: {kp}")
+                    resp = API_SESSION.post(API_URL, json=payload, headers=headers, timeout=60)
                     resp.raise_for_status()
                     body = resp.json()
                     ai_text = body.get('choices', [])[0].get('message', {}).get('content', '')
+                    logger.info(f"DeepSeek API call successful for AI scoring on KP: {kp}")
                     # parse score
                     import re
                     m = re.search(r"score\s*[:\-]?\s*([0-5])", ai_text, re.IGNORECASE)
@@ -425,8 +475,17 @@ def submit_assessment():
                         now2 = datetime.datetime.now().isoformat()
                         c.execute("INSERT INTO reviews (user_id, step_id, task_id, feedback, created_at) VALUES (?, ?, ?, ?, ?)",
                                   (user_id, step_id, kp, ai_text, now2))
-                except Exception:
-                    # ignore AI failures, leave ai_score as-is
+                except requests.exceptions.Timeout:
+                    logger.warning(f"DeepSeek API timeout for KP scoring: {kp}")
+                    # ignore timeout, leave ai_score as-is
+                    pass
+                except requests.exceptions.ConnectionError as e:
+                    logger.warning(f"DeepSeek API connection error for KP scoring: {kp}, {str(e)}")
+                    # ignore connection errors, leave ai_score as-is
+                    pass
+                except Exception as e:
+                    logger.warning(f"DeepSeek API error for KP scoring: {kp}, {str(e)}")
+                    # ignore other AI failures, leave ai_score as-is
                     pass
 
         conn.commit()
