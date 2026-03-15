@@ -17,7 +17,7 @@ errorlog = "-"   # 输出到 stderr
 loglevel = "info"
 
 # 超时时间
-timeout = 300
+timeout = 120
 
 # 进程名
 proc_name = "publishing_lab"

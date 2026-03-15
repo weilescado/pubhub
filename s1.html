@@ -93,14 +93,29 @@
 
           <div style="margin-top:12px;">
             <label>目标（使用 SMART 结构填写）</label>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:6px;">
-              <input type="text" data-field="objective_specific" placeholder="S - 具体 (Specific)" />
-              <input type="text" data-field="objective_measurable" placeholder="M - 可衡量 (Measurable)" />
-              <input type="text" data-field="objective_achievable" placeholder="A - 可实现 (Achievable)" />
-              <input type="text" data-field="objective_relevant" placeholder="R - 相关 (Relevant)" />
-              <input type="text" data-field="objective_timebound" placeholder="T - 有时间限制 (Time-bound)" />
+            <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 6px;">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="width: 140px; font-weight: bold;">Specific (具体)</span>
+                <input type="text" data-field="objective_specific" placeholder="目标需清晰明确，不能模棱两可" style="flex: 1;" />
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="width: 140px; font-weight: bold;">Measurable (可衡量)</span>
+                <input type="text" data-field="objective_measurable" placeholder="目标需有明确的量化标准" style="flex: 1;" />
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="width: 140px; font-weight: bold;">Achievable (可实现)</span>
+                <input type="text" data-field="objective_achievable" placeholder="目标需具有现实可行性" style="flex: 1;" />
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="width: 140px; font-weight: bold;">Relevant (相关)</span>
+                <input type="text" data-field="objective_relevant" placeholder="目标需与整体战略相关联" style="flex: 1;" />
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="width: 140px; font-weight: bold;">Time-bound (有时限)</span>
+                <input type="text" data-field="objective_timebound" placeholder="目标需有明确的截止日期" style="flex: 1;" />
+              </div>
             </div>
-            <button class="button ghost small" type="button" data-smart-suggest>AI 帮助生成 SMART</button>
+            <!-- AI 帮助生成 SMART 按钮已移除 -->
           </div>
 
           <div style="margin-top:12px;">

@@ -196,6 +196,13 @@ const bindWorkspace = (step) => {
         if (root.querySelector("[data-gantt-chart]")) renderGanttChart(root);
       }
     });
+
+    root.addEventListener("change", (e) => {
+      if (e.target.matches("[data-field]") || e.target.closest("[data-gantt-body]")) {
+        syncSectionByRoot(step, root);
+        if (root.querySelector("[data-gantt-chart]")) renderGanttChart(root);
+      }
+    });
     
     if (fileInput && fileMeta) {
       fileInput.addEventListener("change", () => {
@@ -885,6 +892,19 @@ const buildGanttRow = () => {
     td.style.border = "1px solid var(--line)";
     const input = document.createElement("input");
     input.placeholder = ph;
+    
+    // Fix: Add direct event listener to ensure input is captured
+    const handleInput = () => {
+      const root = input.closest("[data-section]");
+      const step = document.body.dataset.step;
+      if (root && step) {
+        syncSectionByRoot(step, root);
+        if (root.querySelector("[data-gantt-chart]")) renderGanttChart(root);
+      }
+    };
+    input.addEventListener("input", handleInput);
+    input.addEventListener("change", handleInput); // Also listen for change events (e.g. paste, autofill)
+
     td.appendChild(input);
     tr.appendChild(td);
   });
